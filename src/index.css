@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+  :root {
+    --primary-blue: #00d8ff;
+    --primary-purple: #6a00ff;
+  }
+
+  .icon{
+    color: var(--primary-purple);
+  }
+
+  @layer base{
+    body{
+      @apply font-[Poppins]
+    }
+    h1{
+      @apply text-3xl md:text-4xl font-bold
+    }
+    h2{
+      @apply text-xl md:text-2xl font-bold
+    }
+   button{
+    @apply p-3 border bg-gradient-to-r from-[var(--primary-blue)] to-[var(--primary-purple)] text-white rounded-md
+   }
+   .icon{
+    @apply  text-2xl cursor-pointer
+   }
+  }
